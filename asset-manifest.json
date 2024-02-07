@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Estebnlr/react-intro.git/static/css/main.9d5c2c70.css",
+    "main.js": "/Estebnlr/react-intro.git/static/js/main.c0700103.js",
+    "index.html": "/Estebnlr/react-intro.git/index.html",
+    "static/media/x-red.svg": "/Estebnlr/react-intro.git/static/media/x-red.139e2423c0c58fda0a43.svg",
+    "static/media/x.svg": "/Estebnlr/react-intro.git/static/media/x.eb0580540d6e03cd2d52.svg",
+    "static/media/search-icon.svg": "/Estebnlr/react-intro.git/static/media/search-icon.e245a22c851131acaf4f364fe4add6a5.svg",
+    "static/media/circle-check.svg": "/Estebnlr/react-intro.git/static/media/circle-check.337bb861b9e4211753fb.svg",
+    "static/media/circle.svg": "/Estebnlr/react-intro.git/static/media/circle.5022754cfbf199720b9a.svg",
+    "main.9d5c2c70.css.map": "/Estebnlr/react-intro.git/static/css/main.9d5c2c70.css.map",
+    "main.c0700103.js.map": "/Estebnlr/react-intro.git/static/js/main.c0700103.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d5c2c70.css",
+    "static/js/main.c0700103.js"
+  ]
+}
