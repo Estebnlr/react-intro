@@ -1,4 +1,5 @@
 import React from 'react';
+import  './AppUI.css'
 import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
@@ -23,22 +24,24 @@ function AppUI() {
   } = React.useContext(TodoContext);
   
   return (
-    <>
-      <TodoCounter />
-      <TodoSearch />
 
-      <TodoList>
-        {loading && (
-          <>
-            <TodosLoading />
-            <TodosLoading />
-            <TodosLoading />
-          </>
-        )}
-        {error && <TodosError/>}
-        {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
-
-        {searchedTodos.map(todo => (
+      <main className="app">
+        <header>
+          <strong className="title">Que onda, Manuel!</strong>
+          <TodoCounter  />
+        </header>
+        <TodoSearch />
+        <TodoList>
+          {loading && (
+            <>
+              <TodosLoading />
+              <TodosLoading />
+              <TodosLoading />
+            </>
+          )}
+          {error && <TodosError/>}
+          {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
+          {searchedTodos.map(todo => (
           <TodoItem
             key={todo.text}
             text={todo.text}
@@ -47,18 +50,21 @@ function AppUI() {
             onDelete={() => deleteTodo(todo.text)}
           />
         ))}
-       
-      </TodoList>
-      <CreateTodoButton 
+        </TodoList>
+        <CreateTodoButton 
+        
           setOpenModal={setOpenModal}
         />
-      {openModal && (
-       <Modal>
-         <TodoForm />
-       </Modal>
-      )}
-    </>
-  );
-}
+        
+        {openModal && (
+        <Modal>
+          <TodoForm />
+        </Modal>
+        )}
+        
+      </main>
+    )
+  }
+  
 
 export { AppUI };

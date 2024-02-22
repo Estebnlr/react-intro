@@ -1,0 +1,32 @@
+.app {
+    width:100%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color:#f5f7fb;
+    border-radius: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #232d57;
+}
+
+@media (min-width: 600px) {
+    .app {
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 1.25rem;
+      
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 0.15rem;
+    }
+}

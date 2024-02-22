@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   position: relative;
+  width: 100%;
 }
 
 .search-container input {
-  width: 80%;
+  width: 100%;
   height: 2.8em;
   border-radius: 2em;
   border: 1px solid #b4b7bb;
@@ -22,5 +23,5 @@
   height: 1rem;
   position: absolute;
   top: 0.7em;
-  right: 4.2em;
+  right: 1.2em;
 }
